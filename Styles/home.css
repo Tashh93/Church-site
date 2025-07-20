@@ -1,0 +1,269 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+10. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+html {
+  background: linear-gradient(20deg, blue, white, #3f5ffa);
+}
+
+body {
+  font-family: lora, serif;
+}
+
+header {
+}
+
+.logo {
+  height: 150px;
+  width: 190px;
+  margin-left: 537px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #3f5ffa;
+}
+
+.leader-login-tab {
+  margin-top: 15px;
+  margin-right: 780px;
+}
+
+.leader-login-tab a {
+  color: white;
+  font-style: italic;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+.leader-login-tab a:hover {
+  color: #3f5ffa;
+  background-color: white;
+  font-weight: bold;
+  font-style: normal;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0;
+  margin-right: 70px;
+}
+
+li a,
+.dropdown .dropbtn {
+  display: inline-block;
+  color: white;
+  font-style: italic;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+  color: #3f5ffa;
+  font-style: normal;
+  font-weight: bold;
+  background-color: white;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  color: black;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#hero-section {
+  /* border: 3px solid black; */
+}
+
+.intro {
+  /* border: 3px solid black; */
+  text-align: center;
+  color: #d4af37;
+  font-size: 40px;
+}
+
+.intro-text {
+  font-size: 20px;
+  color: blue;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}
+
+.large-red {
+  font-size: 20px;
+  animation: textChange 5s infinite alternate;
+}
+
+@keyframes textChange {
+  from {
+    color: blue;
+    font-size: 20px;
+  }
+  to {
+    color: red;
+    font-size: 30px;
+  }
+}
+
+.join {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 2px 5px #3f5ffa;
+  color: #3f5ffa;
+  margin-left: 550px;
+  padding: 10px;
+  width: 150px;
+  background-color: white;
+}
+
+#feature-banner {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background-color: #d4af37;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.feature-content {
+  font-size: 27px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #3f5ffa;
+  animation: scroll-left 15s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.feature-time {
+  color: #3f5ffa;
+  text-shadow: 2px 2px 2px white;
+}
+
+#quick-links-container {
+  border: 3px solid black;
+}
+
+.service-times-snippet {
+}
+
+.get-involved-snippet {
+}
+
+.view-sermons-snippet {
+}
+
+.pastor-message {
+  border: 3px solid black;
+}
