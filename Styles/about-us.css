@@ -1,0 +1,170 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+10. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+html {
+  background: linear-gradient(180deg, #ffffff, #3f5ffa, #d4af37);
+}
+
+body {
+  font-family: lora, serif;
+}
+
+.logo {
+  height: 150px;
+  width: 190px;
+  margin-left: 537px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #3f5ffa;
+}
+
+.leader-login-tab {
+  margin-top: 15px;
+  margin-right: 780px;
+}
+
+.leader-login-tab a {
+  color: white;
+  font-style: italic;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+.leader-login-tab a:hover {
+  color: #3f5ffa;
+  background-color: white;
+  font-weight: bold;
+  font-style: normal;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0;
+  margin-right: 70px;
+}
+
+li a,
+.dropdown .dropbtn {
+  display: inline-block;
+  color: white;
+  font-style: italic;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+  color: #3f5ffa;
+  font-style: normal;
+  font-weight: bold;
+  background-color: white;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  color: black;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

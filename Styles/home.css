@@ -82,9 +82,6 @@ body {
   font-family: lora, serif;
 }
 
-header {
-}
-
 .logo {
   height: 150px;
   width: 190px;
@@ -170,10 +167,6 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block;
-}
-
-#hero-section {
-  /* border: 3px solid black; */
 }
 
 .intro {
@@ -276,56 +269,51 @@ li.dropdown {
   text-align: center;
 }
 
-.service-times-snippet {
-  height: 300px;
-  padding: 20px;
+.snippet-image1,
+.snippet-image2,
+.snippet-image3 {
+  border-radius: 50%;
+  height: 341px;
+  width: 355px;
 }
 
-.get-involved-snippet {
-  height: 300px;
-  padding: 20px;
+a.snippet-image1, a.snippet-image2, a.snippet-image3 {
+  font-size: 25px;
+  text-decoration: none;
+
 }
 
-.view-sermons-snippet {
-  height: 300px;
-  padding: 20px;
+.snippet-image1{
+  background-image: url('/Images/get-involved.png');
+  background-size: cover;
 }
+
+.snippet-image2 {
+  background-image: url('/Images/service-times.jpg');
+  background-size: cover;
+}
+
+.snippet-image3 {
+  background-image: url('/Images/Church-inside.jpg');
+  background-size: cover;
+} 
 
 .service-times-snippet,
-.view-sermons-snippet,
-.get-involved-snippet {
-  border: 7px solid;
-  border-color: #3f5ffa #d4af37 #ffffff #3f5ffa;
-  animation: borderChange 5s ease-in-out infinite alternate;
-}
-
-.service-times-button,
-.get-involved-button,
-.view-sermons-button {
-  margin-top: 10px;
+.get-involved-snippet,
+.view-sermons-snippet, .snippet-clips {
+  color: #ffffff;
+  margin-top: 80px;
   margin-bottom: 20px;
-  font-weight: 800;
-  border-radius: 10px;
-  border: none;
-  box-shadow: 2px 2px 5px #3f5ffa;
-  color: #3f5ffa;
-  padding: 10px;
-  padding-bottom: 2px;
-  width: 75px;
-  background-color: white;
-  box-shadow: 2px 2px 5px #d4af37;
 }
 
-.service-times-button:hover,
-.view-sermons-button:hover,
-.get-involved-button:hover {
-  cursor: pointer;
-  color: white;
-  background-color: #d4af37;
+.service-times-snippet:hover,
+.get-involved-snippet:hover,
+.view-sermons-snippet:hover {
+  color: #d4af37;
 }
 
-.snippet-info {
-  color: white;
+p.snippet-clips{
+  margin: 0;
 }
 
 @keyframes borderChange {
