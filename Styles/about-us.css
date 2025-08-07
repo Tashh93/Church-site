@@ -258,17 +258,13 @@ li.dropdown {
   background-color: #d4af37;
   padding: 20px;
   border-radius: 10px;
-  height: 450px;
+  height: 333px;
 
 }
 
 .mission-title {
   font-size: 30px;
   text-shadow: 2px 2px 2px #3f5ffa;
-}
-
-.mission-statement {
-
 }
 
 .purpose-container{
@@ -290,5 +286,27 @@ li.dropdown {
 }
 
 .pastor-container{
-  border: 2px solid black;
+  padding: 20px;
+  width: 890px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: linear-gradient(1deg, #3f5ffa,#d4af37,#ffffff);
 }
+
+.pastor-image-container{
+  display: flex;
+  gap: 10px;
+}
+
+.action-container{
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.call-to-action{
+  background-color: #d4af37;
+  border-radius: 10px;
+}
+
+
