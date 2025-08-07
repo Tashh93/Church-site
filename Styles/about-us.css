@@ -80,29 +80,30 @@ html {
 
 body {
   font-family: "lora", serif;
-  font-weight: 400px;
+  font-weight: 400;
 }
 
 .banner-container {
   margin-top: 12px;
   text-align: center;
-  margin: 0 auto;
-  margin-top: 20px
+  margin: 20px auto 0 auto;
 }
 
-h1.banner-info{
+h1.banner-info {
   color: #3f5ffa;
+  text-shadow: 2px 2px 2px #d4af37;
   font-family: "Cinzel", serif;
   font-size: 40px;
 }
 
 .big-gold {
   color: #d4af37;
+  text-shadow: 2px 2px 2px #3f5ffa;
   font-weight: bold;
   font-style: normal;
 }
 
-h2.banner-para{
+h2.banner-para {
   color: #d4af37;
   font-family: "Lora", serif;
   margin-bottom: 20px;
@@ -111,7 +112,8 @@ h2.banner-para{
 .logo {
   height: 150px;
   width: 190px;
-  margin-left: 537px;
+  margin-left: 0 auto;
+  display: block;
 }
 
 .navbar {
@@ -195,46 +197,98 @@ li.dropdown {
   display: block;
 }
 
+.about-header{
+  width: 690px;
+  border-radius: 10px;
+  margin: 0px auto;
+  margin-top: 40px;
+}
 
-.mission-section{
+.banner-para{
+  text-shadow: 2px 2px #ffffff;
+}
+
+.content-wrap{
+    max-width: 1200px; 
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-sections{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  flex-wrap: wrap
+}
+
+.history-section {
+  color: #ffffff;
+  background-color: #d4af37;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  flex: 1;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.history-container{
+  height: 485px;
+}
+
+.history-title{
+  color: white;
+  text-shadow: 2px 2px 2px #3f5ffa;
+  font-size: 30px;
+}
+
+.mission-purpose-container{
+  flex: 1;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
-}
-
-.mission-title{
-  color: #ffffff;
-  font-family: "cinzel", serif;
-  text-align: center;
-  font-size: 40px;
-}
-
-.mission-container{
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-  gap: 30px;
-}
-
-.mission-statement{
-  width: 550px;
-  margin-top: 45px;
-  font-family: "cinzel", serif;
-}
-
-.history-purpose-container{
-  display: flex;
-  text-align: center;
   gap: 20px;
-  margin-left: 100px;
-  margin-top: 30px;
+  color: #ffffff;
+  text-align: center;
 }
 
-.history, .purpose{
+.mission-container {
+  background-color: #d4af37;
+  padding: 20px;
+  border-radius: 10px;
+  height: 450px;
+
+}
+
+.mission-title {
+  font-size: 30px;
+  text-shadow: 2px 2px 2px #3f5ffa;
+}
+
+.mission-statement {
+
+}
+
+.purpose-container{
+  background-color: #d4af37;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.purpose-title{
+  font-size: 30px;
+  text-shadow: 2px 2px 2px #3f5ffa;
+}
+
+.mission-container,
+.purpose-container {
+  background-color: #d4af37;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.pastor-container{
   border: 2px solid black;
-  padding: 17px;
-  height: 290px;
-  width: 520px;
 }
-
-
-
