@@ -285,6 +285,7 @@ li.dropdown {
 }
 
 .pastor-container {
+  display: flex;
   padding: 20px;
   width: 890px;
   margin: 0 auto;
@@ -293,8 +294,18 @@ li.dropdown {
 }
 
 .pastor-image-container {
-  display: flex;
-  gap: 10px;
+  width: 700px;
+}
+
+.pastor-word{
+  font-size: 30px;
+  color: #3f5ffa;
+  text-shadow: 2px 2px 2px #d4af37;
+  margin: 0 auto 0 130px;
+}
+
+.pastor-info{
+  color: #ffffff;
 }
 
 .leadership-container {
